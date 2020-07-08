@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToAdminMoviesInput"
+        android:text="Login As Admin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:textColor="@color/txtColor"/>
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="25dp"
+        android:onClick="goToSignupPage"
+        android:text="SignUp"
+        android:textColor="@color/txtColor"
+        android:textSize="24sp" />
+    <android.support.v7.widget.CardView
+        android:clipToPadding="true"
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape1">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/user"/>
+
+                <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerHorizontal="true"
+                        android:textColorHint="#333333"
+                        android:hint="Email or username"
+                        android:inputType="textPersonName"
+                        android:layout_marginTop="130dp"/>
+                <EditText
+                        android:id="@+id/password"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerHorizontal="true"
+                        android:textColorHint="#333333"
+                        android:hint="Password"
+                        android:textColor="@color/txtColor"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="200dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Forgot Password?"
+                android:layout_marginTop="300dp"
+                android:textColor="@color/txtColor"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:onClick="goToMain2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="Login"
+                android:textSize="24sp"
+                android:textColor="@color/txtColor"
+                android:background="@drawable/round_shape"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

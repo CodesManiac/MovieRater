@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light"
+    tools:context=".Ratings">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:gravity="center">
+             <ImageView
+                 android:layout_width="150dp"
+                 android:layout_height="190dp"
+                 android:id="@+id/ratingsImage"
+                 android:background="@color/dark"
+                 android:scaleType="centerCrop"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:text="Movie Title"
+                 android:id="@+id/ratingsName"
+                 android:textColor="@color/dark"
+                 android:textStyle="bold"
+                 android:layout_marginTop="10dp"
+                 android:padding="8dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/ratingsCategory"
+                 android:text="Category"
+                 android:textColor="#808080"
+                 android:layout_marginTop="10dp"
+                 android:padding="8dp"/>
+             <TextView
+                 android:id="@+id/ratingsDescription"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Description"
+                 android:textColor="#808080"
+                 android:layout_marginTop="10dp"
+                 android:padding="8dp"/>
+
+             <RatingBar
+                 android:id="@+id/ratingBar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:numStars="5"
+                 android:rating="2"
+                 android:stepSize="1"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 android:layout_marginTop="20dp" />
+             <EditText
+                 android:id="@+id/editText"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:background="#808080"
+                 android:hint="Comments"
+                 android:textColor="#b5e7a0"
+                 android:layout_marginBottom="20dp"
+                 android:maxLines="10"
+                 android:inputType="textMultiLine"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"/>
+
+             <Button
+                 android:layout_gravity="center"
+                 android:id="@+id/save"
+                 android:layout_width="200dp"
+                 android:layout_height="wrap_content"
+                 android:text="Submit"
+                 android:textColor="@color/txtColor"
+                 android:textSize="20sp"
+                 android:textAlignment="center"
+
+                 android:background="@drawable/round_shape"/>
+
+
+         </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
